@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ヘッダー -->
+    <TextView
+        android:id="@+id/textview_header"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_weight="1.5"
+        android:layout_height="0dp"
+        android:text="Page 1 - TableLayout" />
+
+    <!-- コンテンツ -->
+    <LinearLayout
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="7"
+        android:layout_height="0dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:layout_height="0dp">
+
+                <Button
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Button1" />
+
+                <Button
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Button2" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:layout_height="0dp">
+
+                <Button
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Button3" />
+
+                <Button
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Button4" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <!-- フッター -->
+    <TextView
+        android:id="@+id/textview_footer"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_weight="1.5"
+        android:layout_height="0dp"
+        android:text="Footer" />
+
+</LinearLayout>
